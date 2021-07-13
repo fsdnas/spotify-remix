@@ -1,0 +1,72 @@
+.your-music-bg-container {
+  top: 0px;
+  padding: 10px;
+  background-color: #181818;
+  padding-left: 80px;
+}
+
+.your-music-heading {
+  font-family: 'roboto';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 31px;
+  margin-left: 50px;
+  color: #ffffff;
+}
+.your-music-tracks-container {
+  padding-top: 20px;
+}
+
+.your-music-track {
+  list-style: none;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.your-music-track:hover {
+  background-color: #303030;
+  border-radius: 6px;
+}
+
+.your-music-track-left-container {
+  display: flex;
+  border: none;
+  background-color: transparent;
+}
+
+.your-music-track-thumbnail {
+  width: 60px;
+  height: 60px;
+}
+.your-music-track-details {
+  font-style: normal;
+  font-size: 12px;
+  color: #9b9b9b;
+}
+
+.your-music-track-artist {
+  font-family: 'roboto';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.your-music-track-details-container {
+  margin-left: 20px;
+}
+
+.duration {
+  font-size: 12px;
+  color: #9b9b9b;
+}
+
+.your-music-track-right-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 40px;
+}

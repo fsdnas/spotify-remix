@@ -1,0 +1,184 @@
+.back-btn-container {
+  padding-left: 120px;
+}
+
+.back-btn {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.back-arrow {
+  height: 24px;
+  width: 24px;
+  left: 0px;
+  top: 0px;
+  border-radius: 0px;
+  color: #ffffff;
+}
+
+.back-btn-label {
+  font-family: 'Assistant';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  height: 24px;
+  width: 34px;
+  padding-top: 5px;
+  padding-left: 5px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.category-playlist-image {
+  width: 295px;
+  height: 295px;
+  left: 130px;
+  top: 72px;
+  border-radius: 8px;
+}
+/* ------------------------------------------------------------------ */
+.playlist-body-container {
+  margin: 20px;
+  padding-top: 10px;
+}
+
+.category-playlist-name {
+  font-family: 'roboto';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+.category-playlist-description {
+  font-family: 'roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 70px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+.category-playlist-artist-name {
+  font-family: 'roboto';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+.category-playlist-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  /* align-items: flex-end; */
+  padding-left: 20px;
+  top: 208px;
+}
+
+.playlist-body-top-container {
+  display: flex;
+  flex-direction: row;
+  top: 72px;
+  padding-left: 100px;
+}
+
+.playlist-body-bottom-container {
+  padding-top: 40px;
+}
+
+.column-container {
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  list-style: none;
+  position: inherit;
+}
+
+.track {
+  padding-left: 160px;
+}
+
+.album {
+  padding-left: 303px;
+}
+.time {
+  padding-left: 297px;
+}
+.artist {
+  padding-left: 40px;
+}
+.added {
+  padding-left: 202px;
+}
+
+hr {
+  width: 1278px;
+  height: 0px;
+  left: 130px;
+  top: 436px;
+
+  /* Light / blue-gray / 600 */
+
+  border: 1px solid #475569;
+}
+
+.playlist-track {
+  font-family: 'roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  list-style: none;
+  color: #ffffff;
+  padding-bottom: 15px;
+}
+.playlist-track:hover {
+  background-color: #303030;
+}
+
+table {
+  border-collapse: collapse;
+  width: 90%;
+  margin-left: 110px;
+}
+
+th {
+  color: #ffffff;
+  font-size: 15px;
+}
+
+td {
+  padding: 10px;
+  font-family: 'roboto';
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: normal;
+  max-width: 220px;
+}
+
+.track-item-bt {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 10px;
+  color: #ffffff;
+  cursor: pointer;
+}

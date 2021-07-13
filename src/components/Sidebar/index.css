@@ -1,0 +1,96 @@
+.icon {
+  /* Color Fill */
+  height: 36.000003814697266px;
+  width: 36.000003814697266px;
+  left: 0px;
+  top: 0px;
+  border-radius: 0px;
+  display: flex;
+  align-self: center;
+  color: #9b9b9b;
+}
+
+.icon-txt {
+  /* Profile */
+  line-height: 16px;
+  height: 16px;
+  /* max-width: 56px; */
+  left: 32px;
+  top: 399px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  color: #9b9b9b;
+  font-family: 'roboto';
+}
+
+.sidebar-list-item {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  margin: 10px;
+  /* align-items: center; */
+}
+
+/* sidebar style */
+
+.side-nav-bar {
+  position: fixed;
+  background-color: #040306;
+  background-size: cover;
+  height: auto;
+  width: 98px;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  margin-top: 0px;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.side-nav-items-container {
+  padding: 4px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 200px;
+}
+
+/* @media (max-width: 767px) {
+  .side-nav-bar {
+    position: absolute;
+    width: 360px;
+    height: 56px;
+    left: 0px;
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    background: #040306;
+  }
+} */
+
+.sidebar-logo {
+  display: flex;
+  align-self: flex-start;
+  margin-bottom: auto;
+  width: 90px;
+  padding-top: 20px;
+}
+
+.active-item {
+  color: #ffffff;
+  background-color: #181818;
+  border-left: 5px #1ed760 solid;
+  width: stretch;
+  padding: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-top: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}

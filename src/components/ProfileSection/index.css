@@ -1,0 +1,101 @@
+.profileSection-bg-container {
+  background-color: #181818;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.profile-icon-container {
+  height: 150px;
+  width: 150px;
+  left: 645px;
+  top: 316px;
+  border-radius: 75px;
+
+  border: 2px #ffffff solid;
+}
+
+.profileSection-heading {
+  font-family: 'Assistant';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 63px;
+  color: #ffffff;
+}
+
+.profileSection-icon {
+  position: absolute;
+  height: 98px;
+  width: 98px;
+  align-self: center;
+  margin-left: 23px;
+  margin-top: 21px;
+  color: #ffffff;
+}
+
+.profileSection-followers-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.followers-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.playlists-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.followers-count {
+  color: #1db954;
+  font-family: 'roboto';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.playlists-count {
+  color: #1db954;
+  font-family: 'roboto';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.followers-txt {
+  font-family: 'roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  color: #9b9b9b;
+}
+
+.logout-btn {
+  width: 99px;
+  height: 32px;
+  background-color: transparent;
+  border-radius: 20px;
+  border: 2px #ffffff solid;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+}

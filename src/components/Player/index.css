@@ -1,0 +1,12 @@
+.spotify-player-container {
+  position: fixed;
+  display: flex;
+  bottom: 0px;
+  right: 0px;
+  left: 98px;
+  height: 108px;
+  padding-top: 20px;
+}
+Spotify {
+  margin-top: 20px;
+}

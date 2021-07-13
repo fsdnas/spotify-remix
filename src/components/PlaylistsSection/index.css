@@ -1,0 +1,72 @@
+.playlist-background {
+  background-color: #181818;
+  background-size: cover;
+  width: 100%;
+  padding-bottom: 10px;
+  /* height: 100vh; */
+  margin-bottom: 40px;
+  padding: 10px;
+}
+
+.playlist-content-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 130px;
+  padding-top: 50px;
+  background-color: #181818;
+  height: 100vh;
+}
+
+.playlist-heading {
+  font-family: 'roboto';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 31px;
+  color: #ffffff;
+}
+
+.thumbnail {
+  height: 166px;
+  width: 166px;
+  left: 558px;
+  top: 159px;
+  border-radius: 4px;
+}
+
+.playlist-item {
+  list-style: none;
+  cursor: pointer;
+  padding: 20px;
+}
+
+.playlist-name {
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+
+  text-align: center;
+  color: #ffffff;
+}
+.playlists-items-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 10px;
+}
+
+.tracks {
+  font-family: Assistant;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  /* identical to box height, or 133% */
+
+  text-align: center;
+
+  /* Light / blue-gray / 500 */
+
+  color: #64748b;
+}
