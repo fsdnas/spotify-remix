@@ -71,7 +71,10 @@ class CategoryPlaylist extends Component {
 
   onSelectTrack = event => {
     const {isPlaying} = this.state
-    this.setState({currentTrackUri: event.target.value, isPlaying: !isPlaying})
+    this.setState({
+      currentTrackUri: event.target.getAttribute('data-value'),
+      isPlaying: !isPlaying,
+    })
   }
 
   renderCategoryPlaylistBody = () => {
@@ -102,68 +105,56 @@ class CategoryPlaylist extends Component {
             <li className="artist">Artist</li>
             <li className="added">Added</li>
           </ul>
+          <hr />
           <table className="playlist-tracks-list">
             {categoryPlaylistData.map(track => (
-              <tr value={track.trackUri} className="playlist-track">
-                <td>
-                  <button
-                    onClick={this.onSelectTrack}
-                    value={track.trackUri}
-                    type="button"
-                    className="track-item-bt"
-                  >
-                    {track.serialNumber}
-                  </button>
+              <tr className="playlist-track">
+                <td
+                  onClick={this.onSelectTrack}
+                  data-value={track.trackUri}
+                  value={track.trackUri}
+                >
+                  {track.serialNumber}
                 </td>
-                <td>
-                  <button
-                    onClick={this.onSelectTrack}
-                    value={track.trackUri}
-                    type="button"
-                    className="track-item-bt"
-                  >
-                    {track.name}
-                  </button>
+                <td
+                  onClick={this.onSelectTrack}
+                  data-value={track.trackUri}
+                  value={track.trackUri}
+                  className="track-item-bt"
+                >
+                  {track.name}
                 </td>
-                <td>
-                  <button
-                    onClick={this.onSelectTrack}
-                    value={track.trackUri}
-                    type="button"
-                    className="track-item-bt"
-                  >
-                    {track.albumName}
-                  </button>
+                <td
+                  onClick={this.onSelectTrack}
+                  data-value={track.trackUri}
+                  value={track.trackUri}
+                  className="track-item-bt"
+                >
+                  {track.albumName}
                 </td>
-                <td>
-                  <button
-                    onClick={this.onSelectTrack}
-                    value={track.trackUri}
-                    type="button"
-                    className="track-item-bt"
-                  >
-                    {track.duration}
-                  </button>
+                <td
+                  onClick={this.onSelectTrack}
+                  data-value={track.trackUri}
+                  value={track.trackUri}
+                  className="track-item-bt"
+                >
+                  {track.duration}
                 </td>
-                <td>
-                  <button
-                    onClick={this.onSelectTrack}
-                    value={track.trackUri}
-                    type="button"
-                    className="track-item-bt"
-                  >
-                    {track.artist}
-                  </button>
+                <td
+                  onClick={this.onSelectTrack}
+                  data-value={track.trackUri}
+                  value={track.trackUri}
+                  className="track-item-bt"
+                >
+                  {track.artist}
                 </td>
-                <td>
-                  <button
-                    onClick={this.onSelectTrack}
-                    value={track.trackUri}
-                    type="button"
-                    className="track-item-bt"
-                  >
-                    {track.addedOn}
-                  </button>
+                <td
+                  onClick={this.onSelectTrack}
+                  data-value={track.trackUri}
+                  value={track.trackUri}
+                  className="track-item-bt"
+                >
+                  {track.addedOn}
                 </td>
               </tr>
             ))}
@@ -194,7 +185,6 @@ class CategoryPlaylist extends Component {
   render() {
     const {currentTrackUri, isPlaying} = this.state
     const {selectedSection} = this.props
-    console.log(selectedSection)
     return (
       <div>
         <div className="back-btn-container">

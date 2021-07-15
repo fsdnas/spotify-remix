@@ -37,7 +37,7 @@ class AlbumsSection extends Component {
 
   onSelectAlbumTrack = e => {
     const {onSelectingAlTrack} = this.props
-    onSelectingAlTrack(e.target.value)
+    onSelectingAlTrack(e.target.getAttribute('data-value'))
   }
 
   renderAlbumComponent = () => {
@@ -68,55 +68,40 @@ class AlbumsSection extends Component {
           <table className="playlist-tracks-list">
             {albumData.map(eachItem => (
               <tr value={eachItem.trackUri} className="playlist-track">
-                <td>
-                  <button
-                    onClick={this.onSelectAlbumTrack}
-                    value={eachItem.trackUri}
-                    type="button"
-                    className="track-item-bt"
-                  >
-                    {eachItem.serialNumber}
-                  </button>
+                <td
+                  onClick={this.onSelectAlbumTrack}
+                  data-value={eachItem.trackUri}
+                  className="track-item-bt"
+                >
+                  {eachItem.serialNumber}
                 </td>
-                <td>
-                  <button
-                    onClick={this.onSelectAlbumTrack}
-                    value={eachItem.trackUri}
-                    type="button"
-                    className="track-item-bt"
-                  >
-                    {eachItem.name}
-                  </button>
+                <td
+                  onClick={this.onSelectAlbumTrack}
+                  data-value={eachItem.trackUri}
+                  className="track-item-bt"
+                >
+                  {eachItem.name}
                 </td>
-                <td>
-                  <button
-                    onClick={this.onSelectAlbumTrack}
-                    value={eachItem.trackUri}
-                    type="button"
-                    className="track-item-bt"
-                  >
-                    {eachItem.albumName}
-                  </button>
+                <td
+                  onClick={this.onSelectAlbumTrack}
+                  data-value={eachItem.trackUri}
+                  className="track-item-bt"
+                >
+                  {eachItem.albumName}
                 </td>
-                <td>
-                  <button
-                    onClick={this.onSelectAlbumTrack}
-                    value={eachItem.trackUri}
-                    type="button"
-                    className="track-item-bt"
-                  >
-                    3:05
-                  </button>
+                <td
+                  onClick={this.onSelectAlbumTrack}
+                  data-value={eachItem.trackUri}
+                  className="track-item-bt"
+                >
+                  3:05
                 </td>
-                <td>
-                  <button
-                    onClick={this.onSelectAlbumTrack}
-                    value={eachItem.trackUri}
-                    type="button"
-                    className="track-item-bt"
-                  >
-                    {eachItem.artist}
-                  </button>
+                <td
+                  onClick={this.onSelectAlbumTrack}
+                  data-value={eachItem.trackUri}
+                  className="track-item-bt"
+                >
+                  {eachItem.artist}
                 </td>
               </tr>
             ))}

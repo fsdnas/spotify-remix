@@ -110,7 +110,7 @@ class HomeSection extends Component {
   }
 
   onclickItem = event => {
-    const selectedValue = event.target.value
+    const selectedValue = event.target.getAttribute('data-value')
     const {isSelected} = this.state
 
     this.setState({
@@ -129,27 +129,24 @@ class HomeSection extends Component {
       <>
         <div className="home-body-container">
           <h3 className="category-name">New Releases</h3>
-          <div className="home-category-items-container">
+          <ul className="home-category-items-container">
             {newReleasesData.map(eachItem => (
-              <button
-                type="button"
-                value={eachItem.id}
-                className="home-category-item"
-                onClick={this.onclickItem}
-                key={eachItem.name}
-                id={eachItem.name}
-                data-section="newreleases"
-                data-imgUrl={eachItem.imageUrl}
-              >
+              <li className="home-category-item">
                 <img
                   className="home-category-item-thumbnail"
                   src={eachItem.imageUrl}
                   alt={eachItem.name}
+                  data-value={eachItem.id}
+                  onClick={this.onclickItem}
+                  key={eachItem.name}
+                  id={eachItem.name}
+                  data-section="newreleases"
+                  data-imgUrl={eachItem.imageUrl}
                 />
                 <p className="home-category-list-name">{eachItem.name}</p>
-              </button>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       </>
     )
@@ -161,27 +158,24 @@ class HomeSection extends Component {
       <>
         <div className="home-body-container">
           <h3 className="category-name">Editor&apos;s picks</h3>
-          <div className="home-category-items-container">
+          <ul className="home-category-items-container">
             {editorsPickData.map(eachPlaylist => (
-              <button
-                type="button"
-                value={eachPlaylist.id}
-                className="home-category-item"
-                onClick={this.onclickItem}
-                key={eachPlaylist.name}
-                id={eachPlaylist.name}
-                data-section="editorspicks"
-                data-imgUrl={eachPlaylist.imageUrl}
-              >
+              <li className="home-category-item">
                 <img
                   className="home-category-item-thumbnail"
                   src={eachPlaylist.imageUrl}
                   alt={eachPlaylist.name}
+                  onClick={this.onclickItem}
+                  data-value={eachPlaylist.id}
+                  key={eachPlaylist.name}
+                  id={eachPlaylist.name}
+                  data-section="editorspicks"
+                  data-imgUrl={eachPlaylist.imageUrl}
                 />
                 <p className="home-category-list-name">{eachPlaylist.name}</p>
-              </button>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       </>
     )
@@ -193,27 +187,24 @@ class HomeSection extends Component {
       <>
         <div className="home-body-container">
           <h3 className="category-name">Categories</h3>
-          <div className="home-category-items-container">
+          <ul className="home-category-items-container">
             {categoriesData.map(each => (
-              <button
-                type="button"
-                value={each.id}
-                className="home-category-item"
-                onClick={this.onclickItem}
-                key={each.id}
-                id={each.name}
-                data-section="categories"
-                data-imgUrl={each.imageUrl}
-              >
+              <li className="home-category-item">
                 <img
                   className="home-category-item-thumbnail"
                   src={each.imageUrl}
                   alt={each.id}
+                  onClick={this.onclickItem}
+                  data-value={each.id}
+                  key={each.id}
+                  id={each.name}
+                  data-section="categories"
+                  data-imgUrl={each.imageUrl}
                 />
                 <p className="home-category-list-name">{each.name}</p>
-              </button>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       </>
     )

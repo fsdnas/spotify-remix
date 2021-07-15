@@ -131,8 +131,9 @@
 hr {
   width: 1278px;
   height: 0px;
-  left: 130px;
+  left: 150px;
   top: 436px;
+  padding-left: 100px;
 
   /* Light / blue-gray / 600 */
 

@@ -67,17 +67,15 @@ class PlaylistsSection extends Component {
         <h1 className="playlist-heading">Your Playlists</h1>
         <ul className="playlists-items-container">
           {playlistData.map(eachItem => (
-            <li
-              className="playlist-item"
-              onClick={this.onclickPlaylist}
-              data-playlist={eachItem.id}
-              data-name={eachItem.name}
-              data-imageUrl={eachItem.imageUrl}
-            >
+            <li className="playlist-item">
               <img
                 className="thumbnail"
                 alt="tracksThumbnail"
                 src={eachItem.imageUrl}
+                onClick={this.onclickPlaylist}
+                data-playlist={eachItem.id}
+                data-name={eachItem.name}
+                data-imageUrl={eachItem.imageUrl}
               />
               <h1 className="playlist-name">{eachItem.name}</h1>
               <p className="tracks">{`${eachItem.totalTracks} Tracks`}</p>
