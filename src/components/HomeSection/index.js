@@ -194,7 +194,7 @@ class HomeSection extends Component {
                   className="home-category-item-thumbnail"
                   src={each.imageUrl}
                   alt={each.id}
-                  onClick={this.onclickItem}
+                  //   onClick={this.onclickItem}
                   data-value={each.id}
                   key={each.id}
                   id={each.name}
